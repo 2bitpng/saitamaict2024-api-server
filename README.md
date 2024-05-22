@@ -1,8 +1,12 @@
 # saitamaict2024-api-server
 ## how to use
 - 単語を合成する(op はplus or minus)
-`URL/merge_word/?str1=apple&str2=orange&op=plus`
-`
+  
+  実行例
+  
+```URL/merge_word/?str1=apple&str2=orange&op=plus```
+
+```
 {
   "status": 200,
   "str": [
@@ -38,12 +42,14 @@
       0.637626171112061]
   ]
 }
-`
+```
 
 - 単語に最も近い単語を取得(str1に最も近いものがえらばれる)
 
-`URL/merge_word/?str1=apple&op=similar`
-`
+  実行例
+
+```URL/merge_word/?str1=apple&op=similar```
+```
 {
   "status": 200,
   "str": [
@@ -79,13 +85,15 @@
       0.637626171112061]
   ]
 }
-`
+```
 
 - 問題を取得する
 
-`URL/get_problem/`
+  実行例
 
-`{
+```URL/get_problem/```
+
+```{
   "status": 200,
   "start": [
     "Chalky",
@@ -96,4 +104,4 @@
   ],
   "target": "unported"
 }
-`
+```
